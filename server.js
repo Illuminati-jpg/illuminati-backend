@@ -9,7 +9,7 @@ const app = express();
 app.get('/', (req, res) => res.send('Updated at 03:34 AM!'));
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(` Server running at https://localhost:${PORT}`));
+app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
 
 app.use(cors());
 app.use(express.json());
